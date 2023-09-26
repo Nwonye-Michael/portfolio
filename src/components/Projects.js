@@ -44,12 +44,7 @@ export const Projects = () => {
       imgUrl: projImg5,
       link: "https://hgn-task2.vercel.app/home",
     },
-    {
-      title: "food-delivery-app",
-      description: "link broke /under development",
-      imgUrl: projImg6,
-    },
-    {
+   {
       title: "vix-risk-calculator",
       description: "Design & Development",
       imgUrl: projImg7,
