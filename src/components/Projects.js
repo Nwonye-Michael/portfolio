@@ -5,7 +5,8 @@ import projImg2 from "../assets/img/eshop.jpg"
 import projImg3 from "../assets/img/gpt3.jpg"
 import projImg4 from "../assets/img/drag&drop.jpg"
 import projImg5 from "../assets/img/moviebox.jpg"
-import projImg6 from "../assets/img/moviebox.jpg"
+// import projImg6 from "../assets/img/moviebox.jpg"
+import projImg9 from "../assets/img/foodDelivery.jpg"
 import projImg7 from "../assets/img/vixcalc.jpg"
 import projImg8 from "../assets/img/cyptocal.jpg"
 import colorSharp2 from "../assets/img/color-sharp2.png"
@@ -33,6 +34,13 @@ export const Projects = () => {
       link: "https://gpt3-ten-gold.vercel.app/",
     },
     {
+      title: "Food App",
+      description: "Development",
+      imgUrl: projImg9,
+
+      link: "https://fooddelivery-swart.vercel.app/home",
+    },
+    {
       title: "Drag and Drop Gallery",
       description: "Design & Development",
       imgUrl: projImg4,
@@ -44,7 +52,7 @@ export const Projects = () => {
       imgUrl: projImg5,
       link: "https://hgn-task2.vercel.app/home",
     },
-   {
+    {
       title: "vix-risk-calculator",
       description: "Design & Development",
       imgUrl: projImg7,
@@ -73,7 +81,6 @@ export const Projects = () => {
                   <h2>Projects</h2>
 
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-             
                     <Tab.Content
                       id="slideInUp"
                       className={

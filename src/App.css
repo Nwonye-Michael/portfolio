@@ -131,7 +131,8 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background: transparent;
+  /* background: transparent; */
+  background-color: #fff;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
@@ -140,7 +141,7 @@ span.navbar-text {
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.social-icon a::before {
+/* .social-icon a::before {
   content: "";
   width: 42px;
   height: 42px;
@@ -149,7 +150,7 @@ span.navbar-text {
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
-}
+} */
 .social-icon a:hover::before {
   transform: scale(1);
 }
@@ -266,7 +267,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -275,19 +276,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner p {
   color: #b8b8b8;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.banner a {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 40px;
+  column-gap: 20px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  display: flex;
 }
 .banner button svg {
   font-size: 25px;
@@ -381,9 +385,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
-  border-radius: 50px;
+  /* border-radius: 10px; */
   background-color: rgb(255 255 255 / 10%);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
@@ -433,7 +437,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 5px;
   overflow: hidden;
   margin-bottom: 24px;
 }
