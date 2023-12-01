@@ -2,7 +2,8 @@ import { useState, useEffect } from "react"
 import { Navbar, Nav, Container } from "react-bootstrap"
 import logo from "../assets/img/logo.svg"
 import navIcon1 from "../assets/img/nav-icon1.svg"
-
+import { FaGithub } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa"
 import navIcon5 from "../assets/img/nav-icon5.svg"
 import navIcon4 from "../assets/img/nav-icon4.svg"
 import { HashLink } from "react-router-hash-link"
@@ -34,12 +35,6 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
-            {/* <img src={logo} alt="Logo" /> */}
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <span className="navbar-toggler-icon"></span>
-          </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
@@ -51,15 +46,7 @@ export const NavBar = () => {
               >
                 Home
               </Nav.Link>
-              <Nav.Link
-                href="#skills"
-                className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("skills")}
-              >
-                Skills
-              </Nav.Link>
+
               <Nav.Link
                 href="#projects"
                 className={
@@ -75,14 +62,16 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/michael-nwonye-2a60b2261/">
-                  <img src={navIcon1} alt="" />
+                  {/* <img src={navIcon1} alt="" /> */}
+                  <FaLinkedin />
                 </a>
                 <a href="https://twitter.com/miko_loh">
                   <img src={navIcon4} alt="" />
                 </a>
                 <span>
                   <a href="https://github.com/Nwonye-Michael">
-                    <img src={navIcon5} alt="" />
+                    {/* <img src={navIcon5} alt="" /> */}
+                    <FaGithub />
                   </a>
                 </span>
               </div>

@@ -4,6 +4,7 @@ import headerImg from "../assets/img/headerImg.jpg"
 import { ArrowRightCircle } from "react-bootstrap-icons"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
+import { useHistory, useRoutes } from "react-router"
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0)
@@ -11,7 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState("")
   const [delta, setDelta] = useState(300 - Math.random() * 100)
   const [index, setIndex] = useState(1)
-  const toRotate = ["Web Developer", "Web Designer"]
+  const toRotate = ["FE dev"]
   const period = 2000
 
   useEffect(() => {
@@ -65,11 +66,11 @@ export const Banner = () => {
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
-                    Hi! I'm Michael A{" "}
+                    hi I'm Michael a{" "}
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='[ "A Web Developer"]'
+                      data-rotate='[ "a FE dev"]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
@@ -81,9 +82,10 @@ export const Banner = () => {
                     I have a proven track record of delivering high-quality
                     projects that meet and exceed client expectations.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+
+                  <a href="#connect" onClick={() => {}}>
                     Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>
