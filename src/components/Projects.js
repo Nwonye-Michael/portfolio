@@ -9,12 +9,19 @@ import projImg5 from "../assets/img/moviebox.jpg"
 import projImg9 from "../assets/img/foodDelivery.jpg"
 import projImg7 from "../assets/img/vixcalc.jpg"
 import projImg8 from "../assets/img/cyptocal.jpg"
+import projImg10 from "../assets/img/trc.jpg"
 import colorSharp2 from "../assets/img/color-sharp2.png"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
 
 export const Projects = () => {
   const projects = [
+    {
+      title: "church web",
+      description: "Development",
+      imgUrl: projImg10,
+      link: "https://trcweb.vercel.app/",
+    },
     {
       title: "resturant",
       description: "Development",

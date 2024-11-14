@@ -65,9 +65,10 @@ export const NavBar = () => {
                   {/* <img src={navIcon1} alt="" /> */}
                   <FaLinkedin />
                 </a>
-                <a href="https://twitter.com/miko_loh">
+                {/*    <a href="https://twitter.com/miko_loh">
                   <img src={navIcon4} alt="" />
                 </a>
+                */}
                 <span>
                   <a href="https://github.com/Nwonye-Michael">
                     {/* <img src={navIcon5} alt="" /> */}
@@ -75,11 +76,11 @@ export const NavBar = () => {
                   </a>
                 </span>
               </div>
-              <HashLink to="#connect">
+              {/*   <HashLink to="#connect">
                 <button className="vvd">
                   <span>Let’s Connect</span>
                 </button>
-              </HashLink>
+              </HashLink> */}
             </span>
           </Navbar.Collapse>
         </Container>
